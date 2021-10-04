@@ -1,0 +1,27 @@
+body {
+  background-color: #BCD6F3;
+}
+h1 {
+  color: red;
+  font-size: 60px;
+  text-align: center;
+  font-family: Arial
+}
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 50;
+  text-align: center;
+}
+p {
+  color: blue;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border: 3px solid #1528CA;
+  padding: 10px;
+  border-radius: 25px;
+}
