@@ -1,0 +1,28 @@
+body {
+  background-color: #BCD6F3;
+}
+h1 {
+  color: blue;
+  font-size: 60px;
+  text-align: center;
+  font-family: "Sofia", sans-serif;
+}
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 50;
+  text-align: center;
+}
+p {
+  color: black;
+}
+
+.picture {
+  width: 60%;
+  border: 3px double #cf220e;
+  padding: 30px 30px;
+  border-radius: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: yellow;
+}
