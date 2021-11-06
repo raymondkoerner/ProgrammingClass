@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+ <!--Raymond Koerner - 7th period programming class -
+     On my honor I have not given or received any unauthorized help. -->
+ <html>
+ <head>
+   <title>Temperature Check</title>
+ </head>
+ <body>
+   <script type="text/javascript">
+     /* This will convert from degrees Kelvin to degrees Celsius and
+     then to degrees Fahrenheit*/
+
+    // Temperature in degrees Kelvin
+    let tempK = prompt ("Enter the temperature in degrees Kelvin: ");
+
+    // Temperature in degrees Celsius
+    let tempC = tempK - 273.0;
+
+    //Temperature in degrees Fahrenheit
+    let tempF = (tempC * 9/5) + 32.0;
+
+    alert(tempK + "  degrees Kelvin is  " + tempF + "  degrees Fahrenheit.");
+   </script>
+ </body>
+
+</html>

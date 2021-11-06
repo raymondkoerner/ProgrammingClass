@@ -1,0 +1,172 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: navy;
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index:2;
+  text-align: center;
+  color: white;
+}
+
+
+main {
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+.flag {
+  background-image: url("https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg");
+  background-size: cover;
+  height: 850px;
+}
+
+main h1 {
+  color: navy;
+  font-family: 'Syne Mono', monospace;
+  font-weight: 600;
+  font-size: 70px;
+  margin-top: 0px;
+  padding-top: 80px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.one {
+  position: relative;
+  top: 10px;
+}
+
+.two {
+  postion: absolute;
+  top: 200px;
+  border: 3px solid #73AD21;
+}
+
+.container1 {
+  width: 80%;
+  height: 400px;
+  background: aqua;
+  margin: auto;
+  padding: 10px;
+}
+
+.three{
+  width: 15%;
+  height: 200px;
+  float: left;
+}
+
+.four {
+  margin-left: 50%;
+  height: 300px;
+  background: #c4edf2;
+}
+
+
+.container2 {
+  width: 80%;
+  height: 430px;
+  background: #6374e6;
+  margin: auto;
+  padding: 10px;
+}
+
+.five{
+  width: 15%;
+  height: 300px;
+  float: left;
+}
+
+.six {
+  margin-left: 50%;
+  height: 300px;
+  background: #c4edf2;
+}
+
+
+.container3 {
+  width: 80%;
+  height: 500px;
+  background: #c2e8b7;
+  margin: auto;
+  padding: 10px;
+}
+
+.seven{
+  width: 15%;
+  height: 300px;
+  float: left;
+}
+
+.eight {
+  margin-left: 50%;
+  height: 300px;
+  background: #c4edf2;
+}
+
+footer {
+  background-color: navy;
+  color: red;
+  padding: 30px 0;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+
+
+.firstpicture {
+  width: 60%;
+  border: 3px double #cf220e;
+  padding: 30px 30px;
+  border-radius: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: blue;
+}
+
+
+
+blockquote {
+  width: 50%;
+  background: #f9f9f9;
+  background-color: pink;
+  border-left: 10px solid #ccc;
+  margin: auto;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.5em;
+  margin-right: 0.25em;
+  vertical-align: -0.5em;
+}
+blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+cite {
+  display: block;
+  text-indent: 0;
+  text-align: center;
+  font: bold .9rem var(--type-body);
+  text-transform: uppercase;
+  color: hsl(0 0% 20%);
+}
