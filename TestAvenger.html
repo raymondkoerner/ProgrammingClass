@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <!--Raymond Koerner - 7th period programming class -
+     On my honor I have not given or received any unauthorized help. -->
+ <html>
+ <head>
+   <title>Test Avenger</title>
+ </head>
+ <body>
+   <script type="text/javascript">
+     /* This takes in numbers from a browser pop-up and calculates the
+     average of the numbers.
+     */
+
+    // Number 1
+    let num1 = prompt ("Enter number 1 (0 to 100): ");
+    let number1 = parseFloat(num1);
+
+    // Number 2
+    let num2 = prompt ("Enter number 2 (0 to 100): ");
+    let number2 = parseFloat(num2);
+
+    //Number 3
+    let num3 = prompt ("Enter number 3 (0 to 100): ");
+    let number3 = parseFloat(num3);
+
+    let sum = number1 + number2 + number3;
+    let average = sum/3.0;
+
+    if(90.0 < average && average <= 100.0){
+      alert("Average is " + average +".  That is an A!");
+    } else if (80.0 < average && average <= 90.0){
+      alert("Average is " + average +".  That is a B!");
+    } else if (70.0 < average && average <= 80.0){
+      alert("Average is " + average +".  That is a C!");
+    } else if (60.0 <= average && average <= 70.0){
+      alert("Average is " + average +".  That is a D!");
+    } else if (0.0 <= average && average < 60.0){
+      alert ("Average is " + average + ".  That is an F!")
+    } else {
+      alert ("Average is " + average + " and out of range.");
+    }
+   </script>
+ </body>
+
+</html>
