@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+ <!--Raymond Koerner - 7th period programming class -
+     On my honor I have not given or received any unauthorized help. -->
+ <html>
+ <head>
+   <title>Rock, Paper, Scissors</title>
+ </head>
+ <body>
+   <script type="text/javascript">
+     /* This plays Rock, Paper, Scissors with the computer.
+     */
+
+    // get number of rounds
+    let rounds = prompt ("How many rounds do you want to play? ");
+    rounds = parseInt(rounds);
+
+    // User wins, losses, ties
+    let wins = 0;
+    let losses = 0;
+    let ties = 0;
+
+    let computerChoice = "";
+
+    //loop through number of rounds
+    for (let i=0; i < rounds; i++){
+      // get random number between 0 & 2
+      let rand = Math.floor(Math.random() * 3);
+      if (rand == 0) {
+        // rock
+        computerChoice = "r";
+      } else if (rand == 1) {
+        // paper
+        computerChoice = "p";
+      } else if (rand ==2) {
+        // scissors
+        computerChoice = "s";
+      }
+
+      let userChoice = prompt ("Enter Rock (r), Paper (p) or Scissors (s): ");
+
+      //user chooses rock
+      if (userChoice == "r"){
+        if (computerChoice == "r"){
+          ties++;
+        } else if (computerChoice == "p"){
+          losses++;
+        } else if (computerChoice == "s") {
+          wins++;
+        }
+
+      //user chooses paper
+      } else if (userChoice == "p") {
+        if (computerChoice == "r"){
+          wins++;
+        } else if (computerChoice == "p"){
+          ties++;
+        } else if (computerChoice == "s") {
+          losses++;
+        }
+
+      //user chooses scissors
+      } else if (userChoice == "s") {
+        if (computerChoice == "r"){
+          losses++;
+        } else if (computerChoice == "p"){
+          wins++;
+        } else if (computerChoice == "s") {
+          ties++;
+        }
+
+      //user made invalid choice
+      }  else {
+         alert("Invalid choice. You must enter either r, p or s.  \nTry again.");
+         i--;
+      }
+    }
+
+    if (wins > losses){
+      alert (" Number of wins: " + wins + ". \n Number of losses: " + losses +
+          " \n Number of ties: " + ties + "\n You won!");
+    } else if (losses > wins){
+      alert (" Number of wins: " + wins + ". \n Number of losses: " + losses +
+          " \n Number of ties: " + ties + "\n You lost!");
+    } else if (wins == losses){
+      alert (" Number of wins: " + wins + ". \n Number of losses: " + losses +
+          " \n Number of ties: " + ties + "\n You tied!");
+    }
+
+   </script>
+ </body>
+
+</html>
