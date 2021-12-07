@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <!--Raymond Koerner - 7th period programming class -
+     On my honor I have not given or received any unauthorized help. -->
+ <html>
+ <head>
+   <title>Math Formulas</title>
+ </head>
+ <body>
+   <script type="text/javascript">
+     /* Math Formulas for area, perimeter and volume.
+     */
+     function areaSquare(length){
+       let area = length ** 2
+       return area;
+     }
+     function areaRectange(length, width){
+       let area = length * width;
+       return area;
+     }
+     function areaTriangle(base, height){
+       let area = .5 * base * height;
+       return area;
+     }
+     function areaCircle(radius){
+       let area = Math.PI * radius ** 2;
+       return area;
+     }
+     function perimeterSquare(length){
+       let perimeter = 4.0 * length;
+       return perimeter;
+     }
+     function perimeterRectangle(length, width){
+       let perimeter = 2.0 * length + 2.0 * width;
+       return perimeter;
+     }
+     function perimeterTriangle(l1, l2, l3){
+       let perimeter = l1 + l2 + l3;
+       return perimeter;
+     }
+     function perimeterCircle(radius){
+       let perimeter = 2 * Math.PI * radius;
+       return perimeter;
+     }
+     function volumeCube(length){
+       let volume = length * length ** 2;
+       return volume;
+     }
+     function volumeRectangularPrism(length, width, height){
+       let volume = length * width * height;
+       return volume;
+     }
+     function volumeCone(radius, height){
+       let volume = (1.0/3.0) * Math.PI * radius ** 2 * height;
+       return volume;
+     }
+     function volumeSphere(radius){
+       let volume = (4.0/3.0) * Math.PI * radius**3;
+       return volume;
+     }
+
+   </script>
+ </body>
+
+</html>
