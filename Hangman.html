@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+ <!--Raymond Koerner - 7th period programming class -
+     On my honor I have not given or received any unauthorized help. -->
+ <html>
+ <head>
+   <title>Hangman</title>
+ </head>
+ <body>
+   <script type="text/javascript">
+     /* This plays Hangman.
+     */
+
+    // Set array of words
+    const words = ['apple', 'banana', 'cantaloupe',
+                  'pineapple', 'mango', 'watermelon' ]
+
+    let index = Math.floor(Math.random()*words.length);
+    let randomWord = words[index];
+    let randomWordArray = randomWord.split("");
+    let length=randomWord.length;
+    let word = [];
+    let numberOfGuesses = 0;
+    let maxNumGuesses = 15;
+
+    for(let i=0; i<length; i++){
+      word.push("_");
+    }
+
+    console.log("word: " + word);
+
+    let wordString = " ";
+    let guess = "";
+    while(word.includes("_")){
+      wordString = word.join(" ");
+      guess = prompt(wordString + "\nPick a letter.");
+      guess = guess.toLowerCase();
+      for(let j=0; j<length; j++){
+        if(randomWordArray[j] === guess){
+          word[j] = guess;
+        }
+      }
+      numberOfGuesses++;
+      if(numberOfGuesses >= maxNumGuesses){
+        alert("You have reached the maximum number of guesses : " + maxNumGuesses);
+        break;
+      }
+    }
+
+    alert("The word is " + randomWord + "\n Game over.");
+
+   </script>
+ </body>
+
+</html>
