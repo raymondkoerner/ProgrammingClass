@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+ <!--Raymond Koerner - 7th period programming class -
+     On my honor I have not given or received any unauthorized help. -->
+ <html>
+ <head>
+   <title>Treasure Hunt</title>
+ </head>
+ <body>
+   <script type="text/javascript">
+     /* This is a treasure hunt game.  Move east, west, north and south
+        to reach the treasure.
+     */
+    let treasureFound = false;
+    const moves = ["n", "s", "e", "w"];
+
+    let area = {
+         xMax: 10,
+         yMax: 10
+    }
+
+    let player= {
+         x: 0,
+         y: 0,
+         moveNorth(){
+           player.y = player.y+1;
+         },
+         moveSouth(){
+           player.y = player.y-1;
+         },
+         moveEast(){
+           player.x = player.x+1;
+         },
+         moveWest(){
+           player.x = player.x-1;
+         }
+    }
+    let treasure= {
+         x: Math.floor(Math.random()*area.xMax),
+         y: Math.floor(Math.random()*area.yMax)
+    }
+
+    function distance(player, treasure){
+      let xd = Math.abs(treasure.x-player.x);
+      let yd = Math.abs(treasure.y-player.y);
+      let distanceToTreasure = Math.sqrt(xd**2 + yd**2);
+      return distanceToTreasure;
+    }
+    //lert("Treasure is at : " + treasure.x + "  " + treasure.y);
+
+    alert("Treasure Hunt game starting. \n   Find the treasure in" +
+           " a " + area.xMax + " by " + area.yMax + " area.  \n" +
+           "   You will start at 0,0. "
+    );
+
+    let move = "";
+
+    while( !treasureFound ){
+      move = prompt("Do you want to go north (n), south (s), " +
+          " east (e), or west (w)?  Click Cancel to exit the game.")
+      if(move === null){
+        break;
+      }
+      move = move.toLowerCase();
+      if(moves.indexOf(move) <= -1){
+        alert("You must enter n,s,e,w.");
+      } else {
+        switch (move){
+          case "n":
+            player.moveNorth();
+            break;
+          case "s":
+            player.moveSouth();
+            break;
+          case "e":
+            player.moveEast();
+            break;
+          case "w":
+            player.moveWest();
+            break;
+          default:
+            alert("You must enter n,s,e,w.");
+            break;
+        }
+      }
+      if(treasure.x === player.x && treasure.y === player.y){
+        treasureFound = true;
+        alert("You found the treasure at  ( " + treasure.x + " , " + treasure.y +
+           " ) !!");
+      } else {
+        let d = distance(player, treasure);
+        alert("Distance to treasure is " + d);
+      }
+    }
+
+    if(move === null){
+      alert ("Exiting game.  Treasure was at ( " + treasure.x + " , " + treasure.y + " )");
+    }
+
+
+   </script>
+ </body>
+
+</html>
