@@ -1,0 +1,12 @@
+body {
+  background-color: darkseagreen;
+  font-family: 'Trebuchet MS', 'Lucinda Sans', Arial, sans-serif;
+  font-size: 1.2em;
+}
+div {
+  border: 2px solid darkgray;
+  border-radius: 20px;
+  background-color: cadetblue;
+  min-height: 50px;
+  width: 280px;
+}
