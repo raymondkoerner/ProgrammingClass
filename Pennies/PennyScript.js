@@ -1,3 +1,5 @@
+/*  Raymond Koerner - 7th period programming class -
+    On my honor I have not given or received any unauthorized help. */
 let numberPennies = 23;
 /*Complete these three lines of code to grab the correct elements
 from the HTML file to set up the program. */
