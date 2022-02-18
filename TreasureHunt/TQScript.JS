@@ -11,8 +11,6 @@ let width = 1000;
 let height = 500;
 let clickCounter = 30;
 
-let won = false;
-
 function getRandomNumber(value) {
    return Math.floor(Math.random()*value);
 }
@@ -46,7 +44,6 @@ function getMessage(distance) {
     let mess = " ";
     if(distance < height/50){
       mess = "You have found the treasure!";
-      won = true;
     } else if (distance < height/20){
       mess = "You are extremely close. Distance: " + distance;
     } else if ( distance < height/10 ){
