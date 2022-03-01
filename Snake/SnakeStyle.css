@@ -1,0 +1,28 @@
+body {
+    font-family: 'Potta One', cursive;
+    background-color:bisque;
+    color: rgb(58, 33, 3);
+}
+h1 {
+    text-align: center;
+}
+
+#title {
+
+}
+#canvas {
+    width:400px;
+    height: 400px;
+}
+#buttons{
+    width: 150px;
+    height: 65px;
+
+}
+
+
+#score{
+    background-color: burlywood;
+    width: 600px;
+    height: 65px;
+}
