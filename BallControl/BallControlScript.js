@@ -1,3 +1,7 @@
+/*
+Raymond Koerner - 7th period programming class -
+    On my honor I have not given or received any unauthorized help.
+*/
 
 let canvas = document.getElementById('canvas');
 let ctx = canvas.getContext('2d');
