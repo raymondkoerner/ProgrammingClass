@@ -58,7 +58,11 @@ function drawBorder() {
 
 function gameOver(){
   clearInterval(intervalId);
-  scoreDisplay.text("Game Over");
+  ctx.font = "60px 'Comic Sans MS'";
+  ctx.fillStyle = "red";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText("Game Over", width/2, height/2);
 }
 
 let Block = function(col,row){
@@ -151,6 +155,7 @@ let intervalId = setInterval(function() {
   apple.move();
   drawBorder();
 },200);
+
 
 Snake.prototype.checkCollision = function(head){
   let leftCollision = (head.col <= 0);
