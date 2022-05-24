@@ -4,7 +4,7 @@ class Settings:
     """A class to store all settings for Alien Invasion."""
 
     def __init__(self):
-        """Initialize the game's static settings."""
+        """Initialize the game's settings."""
         # Screen settings
         self.screen_width = 600
         self.screen_height = 400
@@ -22,9 +22,9 @@ class Settings:
         # Alien settings
         self.fleet_drop_speed = 10
 
-        # How quickly the game speeds up
+        # How fast the game speeds up
         self.speedup_scale = 1.1
-        # How quickly the alien point values increase
+        # How fast the alien point values increase
         self.score_scale = 1.5
 
         self.initialize_dynamic_settings()
@@ -35,7 +35,7 @@ class Settings:
         self.bullet_speed = 3.0
         self.alien_speed = 1.0
 
-        # fleet_direction of 1 represents right; -1 represents left.
+        # fleet_direction of 1 is right; -1 is left.
         self.fleet_direction = 1
 
         # Scoring
