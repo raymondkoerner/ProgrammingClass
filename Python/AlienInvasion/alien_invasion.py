@@ -1,3 +1,6 @@
+# Raymond Koerner -  On my honor as a student, I have neither given nor received any unauthorized aid on this assignment.
+
+
 import sys
 from time import sleep
 
