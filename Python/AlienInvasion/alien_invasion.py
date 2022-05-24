@@ -13,10 +13,10 @@ from alien import Alien
 
 
 class AlienInvasion:
-    """Overall class to manage game assets and behavior."""
+    """Class to manage game assets and behavior."""
 
     def __init__(self):
-        """Initialize the game, and create game resources."""
+        """Initialize the game."""
         pygame.init()
         self.settings = Settings()
 
@@ -90,7 +90,7 @@ class AlienInvasion:
             pygame.mouse.set_visible(False)
 
     def _check_keydown_events(self, event):
-        """Respond to keypresses."""
+        """Respond to keypresses"""
         if event.key == pygame.K_RIGHT:
             self.ship.moving_right = True
         elif event.key == pygame.K_LEFT:
@@ -203,8 +203,7 @@ class AlienInvasion:
 
         # Determine the number of rows of aliens that fit on the screen.
         ship_height = self.ship.rect.height
-        available_space_y = (self.settings.screen_height -
-                                (3 * alien_height) - ship_height)
+        available_space_y = (self.settings.screen_height - (3 * alien_height) - ship_height)
         number_rows = available_space_y // (2 * alien_height)
 
         # Create the full fleet of aliens.
